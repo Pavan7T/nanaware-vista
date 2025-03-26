@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import Button from '../ui/button';
+import { Button } from '@/components/ui/button';
 import Container from '../ui/Container';
 
 const Hero = () => {
@@ -30,12 +30,12 @@ const Hero = () => {
             </p>
             
             <div className="flex flex-wrap gap-4">
-              <button className="entrata-button">
+              <Button className="entrata-button">
                 Get Started
-              </button>
-              <button className="rounded-full px-6 py-3 font-medium border border-black/20 hover:bg-black/5 transition-colors">
+              </Button>
+              <Button variant="outline" className="rounded-full px-6 py-3 font-medium">
                 Learn More
-              </button>
+              </Button>
             </div>
             
             <div className="mt-12 flex items-center space-x-6">

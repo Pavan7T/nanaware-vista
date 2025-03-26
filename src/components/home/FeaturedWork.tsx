@@ -3,7 +3,7 @@ import React, { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { ChevronRight } from 'lucide-react';
 import Container from '../ui/Container';
-import Button from '../ui/Button';
+import { Button } from '@/components/ui/button';
 
 const projects = [
   {
