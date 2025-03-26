@@ -5,9 +5,6 @@ import { ChevronRight } from 'lucide-react';
 import Container from '../ui/Container';
 import Button from '../ui/Button';
 
-// Adding framer-motion dependency
-<lov-add-dependency>framer-motion@latest</lov-add-dependency>
-
 const projects = [
   {
     id: 1,
