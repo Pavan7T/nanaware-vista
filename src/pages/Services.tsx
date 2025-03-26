@@ -1,6 +1,7 @@
+
 import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { CheckCircle, Users, Shield, Zap, Code, Database, Cloud, Phone } from 'lucide-react';
+import { CheckCircle, Users, Shield, Zap, Code, Database, Cloud, Phone, ChevronRight } from 'lucide-react';
 import Container from '../components/ui/Container';
 import Button from '../components/ui/ButtonWrapper';
 import Navbar from '../components/layout/Navbar';
