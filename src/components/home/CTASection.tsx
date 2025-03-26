@@ -1,7 +1,7 @@
 
 import React from 'react';
 import Container from '../ui/Container';
-import Button from '../ui/Button';
+import { Button } from '@/components/ui/button';
 
 const CTASection = () => {
   return (
@@ -23,19 +23,20 @@ const CTASection = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
-              href="/contact" 
-              variant="secondary" 
+              variant="secondary"
               size="lg" 
               className="bg-white text-primary hover:bg-white/90 border-none"
+              asChild
             >
-              Schedule a Consultation
+              <a href="/contact">Schedule a Consultation</a>
             </Button>
             <Button 
-              href="/services" 
               size="lg"
+              variant="outline"
               className="border-white text-white bg-transparent hover:bg-white/20"
+              asChild
             >
-              Learn More
+              <a href="/services">Learn More</a>
             </Button>
           </div>
         </div>

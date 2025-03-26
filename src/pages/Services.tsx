@@ -1,16 +1,15 @@
-
 import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { ChevronRight, Globe, LayoutGrid, Cloud, Cog, BarChart, Database, Server, Smartphone } from 'lucide-react';
+import { CheckCircle, Users, Shield, Zap, Code, Database, Cloud, Phone } from 'lucide-react';
 import Container from '../components/ui/Container';
-import Button from '../components/ui/Button';
+import Button from '../components/ui/ButtonWrapper';
 import Navbar from '../components/layout/Navbar';
 import Footer from '../components/layout/Footer';
 
 const services = [
   {
     id: 'website-development',
-    icon: Globe,
+    icon: CheckCircle,
     name: 'Website Development',
     shortDesc: 'Custom websites tailored to your brand, optimized for performance and conversions.',
     description: 'Our expert web developers craft responsive, user-friendly websites that engage visitors and drive conversions. From simple brochure sites to complex e-commerce platforms, we create digital experiences that align with your business goals.',
@@ -25,7 +24,7 @@ const services = [
   },
   {
     id: 'business-applications',
-    icon: LayoutGrid,
+    icon: Users,
     name: 'Business Applications',
     shortDesc: 'Streamlined applications that automate workflows and improve business efficiency.',
     description: 'We develop custom business applications that automate processes, streamline operations, and improve productivity. Our solutions are tailored to your specific requirements, helping you save time and reduce costs.',
@@ -40,7 +39,7 @@ const services = [
   },
   {
     id: 'cloud-infrastructure',
-    icon: Cloud,
+    icon: Shield,
     name: 'Cloud Infrastructure',
     shortDesc: 'Secure, scalable cloud solutions for your growing business needs.',
     description: 'Our cloud infrastructure services help you leverage the full potential of cloud computing. We design, implement, and manage cloud environments that are secure, cost-effective, and aligned with your business objectives.',
@@ -55,7 +54,7 @@ const services = [
   },
   {
     id: 'devops-services',
-    icon: Cog,
+    icon: Zap,
     name: 'DevOps Services',
     shortDesc: 'Automated pipelines that enable continuous integration and deployment.',
     description: 'Our DevOps services bridge the gap between development and operations, enabling faster delivery of high-quality software. We implement practices and tools that streamline your development pipeline and improve collaboration.',
@@ -70,7 +69,7 @@ const services = [
   },
   {
     id: 'qa-solutions',
-    icon: BarChart,
+    icon: Code,
     name: 'QA Solutions',
     shortDesc: 'Rigorous testing methodologies to ensure high-quality software.',
     description: 'Our quality assurance services ensure that your software meets the highest standards of quality and reliability. We implement comprehensive testing strategies that identify issues early and reduce the cost of fixes.',
@@ -100,7 +99,7 @@ const services = [
   },
   {
     id: 'web-hosting',
-    icon: Server,
+    icon: Cloud,
     name: 'Web Hosting',
     shortDesc: 'Fast, reliable hosting services with dedicated support and security.',
     description: 'Our web hosting solutions provide the foundation for your online presence with reliable performance, robust security, and expert support. We offer options tailored to your specific needs and traffic requirements.',
@@ -115,7 +114,7 @@ const services = [
   },
   {
     id: 'mobile-app-development',
-    icon: Smartphone,
+    icon: Phone,
     name: 'Mobile App Development',
     shortDesc: 'Native and cross-platform apps that deliver exceptional user experiences.',
     description: 'We create engaging mobile applications for iOS and Android platforms that extend your digital reach. Our development process focuses on user experience, performance, and alignment with your business goals.',

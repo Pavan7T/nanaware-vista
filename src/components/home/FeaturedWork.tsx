@@ -70,7 +70,7 @@ const FeaturedWork = () => {
             >
               <div className="relative h-64 overflow-hidden">
                 <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center z-10">
-                  <Button variant="primary" size="sm" className="translate-y-4 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 delay-75">
+                  <Button variant="default" size="sm" className="translate-y-4 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 delay-75">
                     View Project
                   </Button>
                 </div>
@@ -95,8 +95,8 @@ const FeaturedWork = () => {
         </div>
 
         <div className="mt-12 text-center">
-          <Button href="/portfolio" variant="secondary" size="lg">
-            View All Projects
+          <Button variant="secondary" size="lg" asChild>
+            <a href="/portfolio">View All Projects</a>
           </Button>
         </div>
       </Container>

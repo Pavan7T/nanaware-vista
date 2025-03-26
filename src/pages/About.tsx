@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { CheckCircle, Users, Award, Clock } from 'lucide-react';
 import Container from '../components/ui/Container';
-import Button from '../components/ui/Button';
+import Button from '../components/ui/ButtonWrapper';
 import Navbar from '../components/layout/Navbar';
 import Footer from '../components/layout/Footer';
 
