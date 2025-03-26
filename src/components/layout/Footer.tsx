@@ -79,7 +79,7 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-start">
                 <MapPin className="mr-3 h-5 w-5 text-primary-red shrink-0 mt-0.5" />
-                <span className="text-white/70">Nanaware Tech, Malwadi Rd, near Khandoba Temple, Malawadi, Malavadi, Maharashtra 415508</span>
+                <span className="text-white/70">Nanaware Tech, Malwadi Rd, near Khandoba Temple, Malawadi, Maharashtra 415508</span>
               </li>
               <li className="flex items-center">
                 <Phone className="mr-3 h-5 w-5 text-primary-red" />
