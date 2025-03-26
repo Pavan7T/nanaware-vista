@@ -66,7 +66,19 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Custom theme colors
+				'black': 'hsl(var(--black))',
+				'white': 'hsl(var(--white))',
+				'transparent': 'hsl(var(--transparent))',
+				'primary-red': 'hsl(var(--primary-red))',
+				'white-smoke': 'hsl(var(--white-smoke))',
+				'grey': 'hsl(var(--grey))',
+				'black-2': 'hsl(var(--black-2))',
+				'white-2': 'hsl(var(--white-2))',
+				'pink': 'hsl(var(--pink))',
+				'bg-grey': 'hsl(var(--bg-grey))',
+				'egshell': 'hsl(var(--egshell))',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

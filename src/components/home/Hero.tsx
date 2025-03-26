@@ -1,82 +1,81 @@
 
-import React, { useEffect, useRef } from 'react';
-import Button from '../ui/Button';
+import React from 'react';
+import { motion } from 'framer-motion';
+import Button from '../ui/button';
 import Container from '../ui/Container';
 
 const Hero = () => {
-  const heroRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const handleMouseMove = (e: MouseEvent) => {
-      if (!heroRef.current) return;
-      
-      const rect = heroRef.current.getBoundingClientRect();
-      const x = (e.clientX - rect.left) / rect.width;
-      const y = (e.clientY - rect.top) / rect.height;
-      
-      // Apply subtle parallax to gradient
-      if (heroRef.current) {
-        heroRef.current.style.setProperty('--x', `${x * 100}%`);
-        heroRef.current.style.setProperty('--y', `${y * 100}%`);
-      }
-    };
-
-    document.addEventListener('mousemove', handleMouseMove);
-    
-    return () => {
-      document.removeEventListener('mousemove', handleMouseMove);
-    };
-  }, []);
-
   return (
-    <div 
-      ref={heroRef}
-      className="min-h-screen flex flex-col justify-center relative overflow-hidden"
-      style={{
-        background: 'radial-gradient(circle at var(--x, 50%) var(--y, 50%), rgba(73, 160, 255, 0.1) 0%, rgba(0, 0, 0, 0) 50%)',
-      }}
-    >
+    <div className="min-h-screen flex flex-col justify-center bg-egshell relative overflow-hidden">
       {/* Background Elements */}
-      <div className="absolute inset-0 z-0">
-        <div className="absolute top-1/4 right-1/4 w-64 h-64 bg-primary/5 rounded-full blur-3xl animate-pulse-slow" />
-        <div className="absolute bottom-1/3 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-pulse-slow" style={{ animationDelay: '2s' }} />
+      <div className="absolute inset-0 z-0 overflow-hidden">
+        <div className="absolute top-1/4 right-1/4 w-64 h-64 bg-pink/20 rounded-full blur-3xl" />
+        <div className="absolute bottom-1/3 left-1/4 w-96 h-96 bg-primary-red/10 rounded-full blur-3xl" />
       </div>
 
-      <Container className="relative z-10 text-center px-4 md:px-6">
-        <span className="inline-block py-1 px-3 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4 animate-fade-in">
-          Innovative IT Solutions
-        </span>
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 font-display tracking-tight animate-slide-in">
-          Transforming Business<br className="hidden sm:block" /> Through <span className="text-gradient">Technology</span>
-        </h1>
-        <p className="text-lg md:text-xl text-foreground/70 max-w-3xl mx-auto mb-8 animate-slide-in" style={{ animationDelay: '100ms' }}>
-          We deliver cutting-edge IT solutions that help businesses innovate, 
-          optimize operations, and achieve their digital transformation goals.
-        </p>
-        
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in" style={{ animationDelay: '200ms' }}>
-          <Button href="/contact" size="lg" className="px-8 rounded-full">
-            Get Started
-          </Button>
-          <Button href="/services" variant="outline" size="lg" className="px-8 rounded-full">
-            Explore Services
-          </Button>
-        </div>
-        
-        <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto animate-fade-in" style={{ animationDelay: '300ms' }}>
-          {[
-            { value: '10+', label: 'Years Experience' },
-            { value: '200+', label: 'Projects Completed' },
-            { value: '98%', label: 'Client Satisfaction' },
-            { value: '24/7', label: 'Technical Support' },
-          ].map((stat, i) => (
-            <div key={i} className="text-center glass-card py-6 px-4">
-              <p className="text-3xl font-bold text-gradient mb-1">{stat.value}</p>
-              <p className="text-sm text-foreground/70">{stat.label}</p>
+      <Container className="relative z-10 px-4 md:px-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="text-left"
+          >
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+              Transform Your <span className="text-primary-red">Business</span> Through Technology
+            </h1>
+            <p className="text-lg md:text-xl text-black/80 max-w-2xl mb-8">
+              We deliver cutting-edge IT solutions that help businesses innovate, 
+              optimize operations, and achieve their digital transformation goals.
+            </p>
+            
+            <div className="flex flex-wrap gap-4">
+              <button className="entrata-button">
+                Get Started
+              </button>
+              <button className="rounded-full px-6 py-3 font-medium border border-black/20 hover:bg-black/5 transition-colors">
+                Learn More
+              </button>
             </div>
-          ))}
+            
+            <div className="mt-12 flex items-center space-x-6">
+              <p className="text-sm text-black/60">Trusted by leading companies:</p>
+              <div className="flex space-x-8">
+                {[1, 2, 3].map((i) => (
+                  <div key={i} className="h-8 w-20 bg-black/10 rounded" />
+                ))}
+              </div>
+            </div>
+          </motion.div>
+          
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="relative aspect-square max-w-xl mx-auto lg:mx-0"
+          >
+            <div className="absolute inset-0 bg-primary-red/5 rounded-full" />
+            <div className="absolute inset-4 bg-white rounded-full shadow-xl overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-egshell via-grey to-white-smoke" />
+            </div>
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 h-3/4 bg-white rounded-2xl shadow-2xl overflow-hidden">
+              <div className="w-full h-1/3 bg-primary-red" />
+              <div className="p-6">
+                <div className="h-4 w-2/3 bg-bg-grey rounded-full mb-4" />
+                <div className="h-4 w-1/2 bg-bg-grey rounded-full mb-4" />
+                <div className="h-4 w-3/4 bg-bg-grey rounded-full" />
+              </div>
+            </div>
+          </motion.div>
         </div>
       </Container>
+      
+      {/* Bottom Wave */}
+      <div className="absolute bottom-0 left-0 right-0">
+        <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full">
+          <path d="M0 120L48 108C96 96 192 72 288 66C384 60 480 72 576 72C672 72 768 60 864 54C960 48 1056 48 1152 48C1248 48 1344 48 1392 48L1440 48V0H1392C1344 0 1248 0 1152 0C1056 0 960 0 864 0C768 0 672 0 576 0C480 0 384 0 288 0C192 0 96 0 48 0H0V120Z" fill="white"/>
+        </svg>
+      </div>
     </div>
   );
 };

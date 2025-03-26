@@ -20,20 +20,20 @@ const Button = ({
   ...props 
 }: ButtonProps) => {
   const variantClasses = {
-    primary: 'bg-primary text-primary-foreground hover:bg-primary/90 shadow-sm',
-    secondary: 'bg-secondary text-secondary-foreground hover:bg-secondary/80',
-    outline: 'border border-input bg-background hover:bg-accent hover:text-accent-foreground',
-    ghost: 'hover:bg-accent hover:text-accent-foreground',
-    link: 'text-primary underline-offset-4 hover:underline',
+    primary: 'bg-primary-red text-white hover:bg-primary-red/90 shadow-sm',
+    secondary: 'bg-white text-black border border-black/10 hover:bg-black/5',
+    outline: 'border border-black/20 bg-transparent hover:bg-black/5',
+    ghost: 'hover:bg-black/5',
+    link: 'text-primary-red underline-offset-4 hover:underline',
   };
 
   const sizeClasses = {
     sm: 'h-9 px-3 rounded-md text-sm',
     md: 'h-10 px-4 py-2 rounded-md',
-    lg: 'h-11 px-6 rounded-md text-lg',
+    lg: 'h-11 px-6 rounded-full text-base',
   };
 
-  const baseClasses = 'inline-flex items-center justify-center whitespace-nowrap font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background';
+  const baseClasses = 'inline-flex items-center justify-center whitespace-nowrap font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-red focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background';
 
   if (href) {
     return (
