@@ -6,7 +6,7 @@ import Container from '../ui/Container';
 
 const Hero = () => {
   return (
-    <div className="min-h-screen flex flex-col justify-center bg-egshell relative overflow-hidden">
+    <div className="min-h-screen flex flex-col justify-center bg-egshell relative overflow-hidden pt-20">
       {/* Background Elements */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         <div className="absolute top-1/4 right-1/4 w-64 h-64 bg-pink/20 rounded-full blur-3xl" />
@@ -21,7 +21,7 @@ const Hero = () => {
             transition={{ duration: 0.5 }}
             className="text-left"
           >
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+            <h1 className="text-2xl md:text-3xl xl:text-6xl font-bold mb-6 leading-tight">
               Transform Your <span className="text-primary-red">Business</span> Through Technology
             </h1>
             <p className="text-lg md:text-xl text-black/80 max-w-2xl mb-8">
