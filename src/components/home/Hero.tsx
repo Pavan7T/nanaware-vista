@@ -6,7 +6,7 @@ import Container from '../ui/Container';
 
 const Hero = () => {
   return (
-    <div className="min-h-screen flex flex-col justify-center bg-egshell relative overflow-hidden pt-20">
+    <div className="min-h-screen flex flex-col justify-center bg-egshell relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         <div className="absolute top-1/4 right-1/4 w-64 h-64 bg-pink/20 rounded-full blur-3xl" />
@@ -38,14 +38,14 @@ const Hero = () => {
               </Button>
             </div>
             
-            <div className="mt-12 flex items-center space-x-6">
+            {/* <div className="mt-12 flex items-center space-x-6">
               <p className="text-sm text-black/60">Trusted by leading companies:</p>
               <div className="flex space-x-8">
                 {[1, 2, 3].map((i) => (
                   <div key={i} className="h-8 w-20 bg-black/10 rounded" />
                 ))}
               </div>
-            </div>
+            </div> */}
           </motion.div>
           
           <motion.div

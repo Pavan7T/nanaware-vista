@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Mail, Phone, MapPin } from 'lucide-react';
+import { Mail, Phone, MapPin, Instagram, Linkedin, Github } from 'lucide-react';
 import Container from '../ui/Container';
 
 const Footer = () => {
@@ -18,16 +18,30 @@ const Footer = () => {
               Premium IT solutions for modern businesses. We turn your tech challenges into opportunities for growth.
             </p>
             <div className="flex space-x-4">
-              {['facebook', 'twitter', 'linkedin', 'instagram'].map((social) => (
-                <a 
-                  key={social}
-                  href="#" 
-                  className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary-red transition-colors"
-                  aria-label={social}
-                >
-                  <div className="w-5 h-5 bg-white/90 rounded-sm" />
-                </a>
-              ))}
+              <a
+                href="https://www.instagram.com/auto.matrix__?igsh=YmszNWU1cGRlZmMz"
+                target='_blank'
+                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary-red transition-colors"
+                aria-label="instagram"
+              >
+                <Instagram />
+              </a>
+              <a
+                href="http://linkedin.com/in/pavan-nanaware"
+                target='_blank'
+                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary-red transition-colors"
+                aria-label="linkdin"
+              >
+                <Linkedin />
+              </a>
+              <a
+                href="https://github.com/Pavan7T"
+                target='_blank'
+                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary-red transition-colors"
+                aria-label="github"
+              >
+                <Github />
+              </a>
             </div>
           </div>
 
@@ -65,11 +79,11 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-start">
                 <MapPin className="mr-3 h-5 w-5 text-primary-red shrink-0 mt-0.5" />
-                <span className="text-white/70">B202,Kranti Nagar Rd, Nandanwan Society<br />,Pimple Nilakh, Pimpri-Chinchwad, Maharashtra 411027</span>
+                <span className="text-white/70">Nanaware Tech, Malwadi Rd, near Khandoba Temple, Malawadi, Malavadi, Maharashtra 415508</span>
               </li>
               <li className="flex items-center">
                 <Phone className="mr-3 h-5 w-5 text-primary-red" />
-                <a href="tel:+14155551234" className="text-white/70 hover:text-white transition-colors">+91 7770067324</a>
+                <a href="tel:+917770067324" className="text-white/70 hover:text-white transition-colors">+91 7770067324</a>
               </li>
               <li className="flex items-center">
                 <Mail className="mr-3 h-5 w-5 text-primary-red" />

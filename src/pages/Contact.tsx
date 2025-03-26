@@ -149,9 +149,7 @@ const Contact = () => {
                     <div>
                       <h3 className="font-semibold">Address</h3>
                       <p className="text-foreground/70">
-                        123 Tech Park, Innovation Blvd
-                        <br />
-                        Cityville, State 54321
+                      Nanaware Tech, Malwadi Rd, near Khandoba Temple, Malawadi, Malavadi, Maharashtra 415508
                       </p>
                     </div>
                   </div>
@@ -171,7 +169,7 @@ const Contact = () => {
                     <div>
                       <h3 className="font-semibold">Phone</h3>
                       <p className="text-foreground/70">
-                        <a href="tel:+15551234567">+1 (555) 123-4567</a>
+                        <a href="tel:+917770067324">+91 7770067324</a>
                       </p>
                     </div>
                   </div>
@@ -199,7 +197,7 @@ const Contact = () => {
           <Container>
             <div className="rounded-xl overflow-hidden">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.9374273435346!2d-122.41447838474525!3d37.79916497975338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808a5a80a835%3A0x5b259a5b311a7c3!2sMarket%20Street!5e0!3m2!1sen!2sus!4v1625781499984!5m2!1sen!2sus"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3438.355119442227!2d74.45222997463529!3d17.767896691733032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc3c709ade86c4d%3A0x2c12cc443457579!2sNanaware%20Tech!5e1!3m2!1sen!2sin!4v1743015939648!5m2!1sen!2sin"
                 width="100%"
                 height="450"
                 style={{ border: 0 }}
