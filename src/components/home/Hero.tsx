@@ -59,7 +59,7 @@ const Hero = () => {
               <div className="absolute inset-0 bg-gradient-to-br from-egshell via-grey to-white-smoke" />
             </div>
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 h-3/4 bg-white rounded-2xl shadow-2xl overflow-hidden">
-              <div className="w-full h-1/3 bg-primary-red" />
+              <div className="w-full h-1/3 bg-primary-red p-3 text-white text-2xl " >Welcome to AI world</div>
               <div className="p-6">
                 <div className="h-4 w-2/3 bg-bg-grey rounded-full mb-4" />
                 <div className="h-4 w-1/2 bg-bg-grey rounded-full mb-4" />
